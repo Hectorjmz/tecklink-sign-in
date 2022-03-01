@@ -11,15 +11,38 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-.hide {
-    display: none
-}
-
 .header-content {
     display: flex;
     align-items: center;
     height: 5rem;
     background-color: #2B89EA;
+}
+
+.header-menu {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    opacity: .2;
+}
+
+.hide {
+    display: none
+}
+
+.header-menu img:hover {
+    height: 2.2rem;
+}
+
+.header-menu img {
+    height: 2rem;
+}
+
+.header-menu-element {
+    display: flex;
+    max-width: 1400px;
+    font-size: .9rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-logo {
@@ -38,16 +61,192 @@ body {
 }
 
 .main {
-    height: 100rem;
+    padding-bottom: 2rem;
+}
+
+.main-width {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-logo {
+    display: flex;
+    margin: 3rem auto;
+}
+
+.main-logo img {
     margin: auto;
 }
 
-.main-logo img {}
+.main-form form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+}
 
-.main-form {}
+.main-form input {
+    height: 2.5rem;
+    border-radius: .3rem;
+    border: 1px solid #2B89EA;
+    box-shadow: 1px 1px 1px 1px #2B89EA;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
 
-.main-access {}
+.main-remember {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+    gap: .2rem;
+}
 
-.main-access-external-verify {}
+.main-remember-box {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
 
-@media screen and (min-width: 750px) {}
+.main-access {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.main-access button {
+    border: none;
+    background-color: #2B89EA;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.main-access button:nth-child(2) {
+    color: #2B89EA;
+    background-color: white;
+    border: 2px solid #2B89EA;
+}
+
+.main-access-external-verify {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.top {
+    display: flex;
+    margin: 2rem auto;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.logo-name {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.logo-name p {
+    margin: auto 1rem;
+}
+
+.mission-text {
+    width: 25rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.follow-us li {
+    text-align: center;
+}
+
+.about-format {
+    line-height: 5.3rem;
+}
+
+.footer-bottom {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1000px;
+    height: 10rem;
+    align-items: center;
+    line-height: 2.2rem;
+}
+
+.footer-bottom p {}
+
+.subscribe p {
+    color: #2B89EA;
+    font-weight: bold;
+}
+
+.subscribe input {
+    border-color: #2B89EA;
+    border: 1px solid #2B89EA;
+    border-radius: .7rem;
+    height: 2rem;
+    width: 20rem;
+}
+
+.custom-input {}
+
+.case {
+    position: relative;
+    height: 2rem;
+    width: 20rem;
+}
+
+.shape {
+    position: absolute;
+    display: flex;
+    margin-top: 3px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B89EA;
+    text-align: center;
+    color: white;
+    font-size: small;
+    border-radius: 0 .7rem .7rem 0;
+    height: 2rem;
+    width: 2rem;
+    right: 0;
+    top: 0;
+}
+
+.shape span {
+    display: flex;
+}
+
+.terms {
+    font-size: 1.3rem;
+}
+
+.terms p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gray {
+    color: #CACACA;
+    font-size: smaller;
+}
+
+.barcode {
+    white-space: pre;
+    /* or pre-wrap if you want wrapping to still work. */
+}
+
+@media screen and (min-width: 750px) {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-content img {
+        margin-right: 1rem;
+    }
+}
