@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {}
+
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.hide {
+    display: none
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: #2B89EA;
+}
+
+.header-logo {
+    display: flex;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: .08rem;
+    color: white;
+    align-items: center;
+    margin: auto 1rem;
+}
+
+.header-logo img {
+    height: 2.2rem;
+    margin-right: .4rem;
+}
+
+.main {
+    height: 100rem;
+    margin: auto;
+}
+
+.main-logo img {}
+
+.main-form {}
+
+.main-access {}
+
+.main-access-external-verify {}
+
+@media screen and (min-width: 750px) {}
